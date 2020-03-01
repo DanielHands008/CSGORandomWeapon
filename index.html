@@ -1,0 +1,96 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="./jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <meta charset="UTF-8">
+    <title>CSGO Random Weapon Picker</title>
+  </head>
+  <body>
+    <div id="container">
+	  <div id="wheel" class="categories ct">
+	    <div id="wheel-base"></div>
+		<div id="segment-container">
+		  <div id="segment-top-left"></div>
+		  <div id="segment-top-right"></div>
+		  <div id="segment-middle-right"></div>
+		  <div id="segment-bottom-right"></div>
+		  <div id="segment-bottom-left"></div>
+		  <div id="segment-middle-left"></div>
+		</div>
+		<div id="wheel-centre"></div>
+		<div id="numbers"></div>
+		<div id="categories"></div>
+		<div id="item-1"></div>
+		<div id="item-2"></div>
+		<div id="item-3"></div>
+		<div id="item-4"></div>
+		<div id="item-5"></div>
+		<div id="item-6"></div>
+		<div id="wheel-logo" onclick="changeTeam();"></div>
+	  </div>
+	  <div id="right-panel">
+	    <a class="button8" onclick="roll(Math.floor(Math.random() * 21));">Roll</a>
+		<a class="button8" onclick="roll(Math.floor(Math.random() * 5));">Pistol Round</a>
+	  </div>
+    </div>
+	<div id="image-preloader">
+	<img src="1-5.png" />
+	<img src="1-6.png" />
+	<img src="ak47.png" />
+	<img src="aug.png" />
+	<img src="awp.png" />
+	<img src="base.png" />
+	<img src="categories.png" />
+	<img src="cantre.png" />
+	<img src="centre-ct-logo.png" />
+	<img src="centre-t-logo.png" />
+	<img src="ct-logo-peek.png" />
+	<img src="cz75auto.png" />
+	<img src="deserteagle.png" />
+	<img src="dualberettas.png" />
+	<img src="famas.png" />
+	<img src="fiveseven.png" />
+	<img src="g3sg1.png" />
+	<img src="galilar.png" />
+	<img src="glock18.png" />
+	<img src="m4a1s.png" />
+	<img src="m4a4.png" />
+	<img src="m249.png" />
+	<img src="mac10.png" />
+	<img src="mag7.png" />
+	<img src="mp5sd.png" />
+	<img src="mp7.png" />
+	<img src="mp9.png" />
+	<img src="negev.png" />
+	<img src="nova.png" />
+	<img src="p90.png" />
+	<img src="p250.png" />
+	<img src="p2000.png" />
+	<img src="ppbizon.png" />
+	<img src="r8revolver.png" />
+	<img src="sawedoff.png" />
+	<img src="scar20.png" />
+	<img src="segment-bottom-left-selcted.png" />
+	<img src="segment-bottom-left-unselcted.png" />
+	<img src="segment-bottom-right-selcted.png" />
+	<img src="segment-bottom-right-unselcted.png" />
+	<img src="segment-middle-left-selcted.png" />
+	<img src="segment-middle-left-unselcted.png" />
+	<img src="segment-middle-right-selcted.png" />
+	<img src="segment-middle-right-unselcted.png" />
+	<img src="segment-top-left-selcted.png" />
+	<img src="segment-top-left-unselcted.png" />
+	<img src="segment-top-right-selcted.png" />
+	<img src="segment-top-right-unselcted.png" />
+	<img src="sg553.png" />
+	<img src="ssg08.png" />
+	<img src="tec9.png" />
+	<img src="t-logo-peek.png" />
+	<img src="ump45.png" />
+	<img src="usps.png" />
+	<img src="xm1014.png" />
+	<script type="text/javascript" src="./script.js"></script>
+	</div>
+  </body>
+</html>

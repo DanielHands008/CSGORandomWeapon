@@ -1,0 +1,298 @@
+body {
+	background-color: #060B11;
+	overflow: hidden;
+	margin:0;
+	user-select: none;
+}
+#image-preloader{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	
+}
+
+#container {
+	position: absolute;
+	overflow: hidden;
+	width: 1521px;
+	height: 821px;
+	left: calc(50vw - 760px);
+	top: calc(50vh - 410px);
+}
+
+#right-panel {
+	height: 821px;
+	width: 700px;
+	left: 821px;
+	position: absolute;
+	padding-top: 150px;
+	padding-left: 25px;
+}
+
+
+#wheel {
+	height: 821px;
+	width: 821px;
+	float: left;
+}
+#wheel div {
+	height: 821px;
+	width: 821px;
+	position: absolute;
+}
+#wheel #wheel-base {
+	background-image: url(./base.png);
+}
+#wheel #segment-top-left {
+	background-image: url(./segment-top-left-unselcted.png);
+}
+#wheel #segment-top-right {
+	background-image: url(./segment-top-right-unselcted.png);
+}
+#wheel #segment-middle-right {
+	background-image: url(./segment-middle-right-unselcted.png);
+}
+#wheel #segment-bottom-right {
+	background-image: url(./segment-bottom-right-unselcted.png);
+} 
+#wheel #segment-bottom-left {
+	background-image: url(./segment-bottom-left-unselcted.png);
+}
+#wheel #segment-middle-left {
+	background-image: url(./segment-middle-left-unselcted.png);
+}
+#wheel #segment-top-left.selected {
+	background-image: url(./segment-top-left-selcted.png);
+}
+#wheel #segment-top-right.selected {
+	background-image: url(./segment-top-right-selcted.png);
+}
+#wheel #segment-middle-right.selected {
+	background-image: url(./segment-middle-right-selcted.png);
+}
+#wheel #segment-bottom-right.selected {
+	background-image: url(./segment-bottom-right-selcted.png);
+}
+#wheel #segment-bottom-left.selected {
+	background-image: url(./segment-bottom-left-selcted.png);
+}
+#wheel #segment-middle-left.selected {
+	background-image: url(./segment-middle-left-selcted.png);
+}
+
+#wheel #wheel-centre {
+	background-image: url(./centre.png);
+}
+#wheel #wheel-logo {
+  position: relative;
+  width: 114px;
+  height: 114px;
+  left: 353px;
+  top: 353px;
+  margin: 0;
+  cursor: pointer;
+}
+#wheel.ct #wheel-logo {
+	background-image: url(./centre-ct-logo.png);
+}
+#wheel.t #wheel-logo {
+	background-image: url(./centre-t-logo.png);
+}
+#wheel.ct #wheel-logo:hover {
+	background-image: url(./ct-logo-peek.png);
+}
+#wheel.t #wheel-logo:hover {
+	background-image: url(./t-logo-peek.png);
+}
+#wheel #numbers {
+	background-image: url(./1-5.png);
+}
+#wheel.rifle #numbers {
+	background-image: url(./1-6.png);
+}
+#wheel.categories #numbers {
+	background-image: url(./1-6.png);
+}
+#wheel.categories #categories {
+	background-image: url(./categories.png);
+}
+
+
+/* Pistols */
+#wheel.pistol.ct #item-1 {
+  animation-name: slot1-pistolct;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes slot1-pistolct {
+  0% {background-image: url(./p2000.png)}
+  10% {background-image: url(./usps.png)}
+  50% {background-image: url(./usps.png)}
+  60% {background-image: url(./p2000.png)}
+  100% {background-image: url(./p2000.png)}
+}
+#wheel.pistol.t #item-1 {
+  background-image: url(./glock18.png);
+}
+#wheel.pistol #item-2 {
+	background-image: url(./dualberettas.png);
+}
+#wheel.pistol #item-3 {
+	background-image: url(./p250.png);
+}
+#wheel.pistol.ct #item-4 {
+  animation-name: slot4-pistolct;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes slot4-pistolct {
+  0% {background-image: url(./fiveseven.png)}
+  10% {background-image: url(./cz75auto.png)}
+  50% {background-image: url(./cz75auto.png)}
+  60% {background-image: url(./fiveseven.png)}
+  100% {background-image: url(./fiveseven.png)}
+}
+#wheel.pistol.t #item-4 {
+  animation-name: slot4-pistolt;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes slot4-pistolt {
+  0% {background-image: url(./tec9.png)}
+  10% {background-image: url(./cz75auto.png)}
+  50% {background-image: url(./cz75auto.png)}
+  60% {background-image: url(./tec9.png)}
+  100% {background-image: url(./tec9.png)}
+}
+#wheel.pistol #item-5 {
+  animation-name: slot5-pistol;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes slot5-pistol {
+  0% {background-image: url(./deserteagle.png)}
+  10% {background-image: url(./r8revolver.png)}
+  50% {background-image: url(./r8revolver.png)}
+  60% {background-image: url(./deserteagle.png)}
+  100% {background-image: url(./deserteagle.png)}
+}
+
+/* Heavy */
+#wheel.heavy #item-1 {
+	background-image: url(./nova.png);
+}
+#wheel.heavy #item-2 {
+	background-image: url(./xm1014.png);
+}
+#wheel.heavy.t #item-3 {
+	background-image: url(./sawedoff.png);
+}
+#wheel.heavy.ct #item-3 {
+	background-image: url(./mag7.png);
+}
+#wheel.heavy #item-4 {
+	background-image: url(./m249.png);
+}
+#wheel.heavy #item-5 {
+	background-image: url(./negev.png);
+}
+
+/* SMG */
+#wheel.smg.t #item-1 {
+	background-image: url(./mac10.png);
+}
+#wheel.smg.ct #item-1 {
+	background-image: url(./mp9.png);
+}
+#wheel.smg #item-2 {
+  animation-name: slot2-smg;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes slot2-smg {
+  0% {background-image: url(./mp7.png)}
+  10% {background-image: url(./mp5sd.png)}
+  50% {background-image: url(./mp5sd.png)}
+  60% {background-image: url(./mp7.png)}
+  100% {background-image: url(./mp7.png)}
+}
+#wheel.smg #item-3 {
+	background-image: url(./ump45.png);
+}
+#wheel.smg #item-4 {
+	background-image: url(./p90.png);
+}
+#wheel.smg #item-5 {
+	background-image: url(./ppbizon.png);
+}
+
+/* Rifle */
+#wheel.rifle.t #item-1 {
+	background-image: url(./galilar.png);
+}
+#wheel.rifle.ct #item-1 {
+	background-image: url(./famas.png);
+}
+#wheel.rifle.t #item-2 {
+	background-image: url(./ak47.png);
+}
+#wheel.rifle.ct #item-2 {
+  animation-name: slot2-riflect;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes slot2-riflect {
+  0% {background-image: url(./m4a4.png)}
+  10% {background-image: url(./m4a1s.png)}
+  50% {background-image: url(./m4a1s.png)}
+  60% {background-image: url(./m4a4.png)}
+  100% {background-image: url(./m4a4.png)}
+}
+#wheel.rifle #item-3 {
+	background-image: url(./ssg08.png);
+}
+#wheel.rifle.t #item-4 {
+	background-image: url(./sg553.png);
+}
+#wheel.rifle.ct #item-4 {
+	background-image: url(./aug.png);
+}
+#wheel.rifle #item-5 {
+	background-image: url(./awp.png);
+}
+#wheel.rifle.t #item-6 {
+	background-image: url(./g3sg1.png);
+}
+#wheel.rifle.ct #item-6 {
+	background-image: url(./scar20.png);
+}
+
+/* Buttons */
+a.button8{
+ display:inline-block;
+ padding:0.2em 1.45em;
+ margin:0.1em;
+ border:0.15em solid #CCCCCC;
+ box-sizing: border-box;
+ text-decoration:none;
+ font-family:'Segoe UI','Roboto',sans-serif;
+ font-weight:400;
+ color:#000000;
+ background-color:#CCCCCC;
+ text-align:center;
+ position:relative;
+ cursor: pointer;
+}
+a.button8:hover{
+ border-color:#7a7a7a;
+}
+a.button8:active{
+ background-color:#999999;
+}
+@media all and (max-width:30em){
+ a.button8{
+  display:block;
+  margin:0.2em auto;
+ }
+} 
